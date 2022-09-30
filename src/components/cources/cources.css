@@ -1,4 +1,4 @@
-#app { height: 10% }
+#app { height: 100% }
 html,
 body {
   position: relative;
@@ -15,14 +15,14 @@ body {
 }
 
 .swiper {
-  width: 100%;
+  width: 80%;
   height: 100%;
 }
 
 .swiper-slide {
   text-align: center;
   font-size: 18px;
-  background: #fff;
+  background: rgb(163, 26, 190);
 
   /* Center slide text vertically */
   display: -webkit-box;

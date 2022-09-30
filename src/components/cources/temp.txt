@@ -1,0 +1,45 @@
+import React from 'react';
+
+const Cources = () => {
+    return (
+        <>
+            <div className='grid lg:grid-cols-4 gap-4 align-items-center ml-16'>
+                <div className="w-5/6 card card-side bg-base-100 shadow-xl">
+                    <figure><img className='w-full h-full' src="https://placeimg.com/200/280/arch" alt="Movie" /></figure>
+                    <div className="card-body">
+                        <h2 className="card-title">New movie is released!</h2>
+                        <p>Click the button to watch on Jetflix app.</p>
+                        <div className="card-actions justify-end">
+                            <button className="btn btn-primary normal-case">Enroll</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div className="w-5/6 card card-side bg-base-100 shadow-xl">
+                    <figure><img className='w-full h-full' src="https://placeimg.com/200/280/arch" alt="Movie" /></figure>
+                    <div className="card-body">
+                        <h2 className="card-title">New movie is released!</h2>
+                        <p>Click the button to watch on Jetflix app.</p>
+                        <div className="card-actions justify-end">
+                            <button className="btn btn-primary normal-case">Enroll</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div className="w-5/6 card card-side bg-base-100 shadow-xl">
+                    <figure><img className='w-full h-full' src="https://placeimg.com/200/280/arch" alt="Movie" /></figure>
+                    <div className="card-body">
+                        <h2 className="card-title">New movie is released!</h2>
+                        <p>Click the button to watch on Jetflix app.</p>
+                        <div className="card-actions justify-end">
+                            <button className="btn btn-primary normal-case">Enroll</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </>
+    );
+};
+
+export default Cources;

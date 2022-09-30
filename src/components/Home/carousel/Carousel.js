@@ -4,67 +4,53 @@ import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
 import "swiper/css";
-import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
+import "swiper/css/navigation";
 
 import "./carousel.css";
 
 // import required modules
-import { EffectCoverflow, Pagination } from "swiper";
+import { Pagination, Navigation } from "swiper";
 
-const Carousel = () => {
+export default function App() {
     return (
-        // <div className="dark:bg-gradient-to-r dark:from-blue-500 dark:to-black w-full">
-            <div className="w-full">
-
-            {/* <span className="text-yellow-400 text-xl border-b-4 border-b-white"></span> */}
-            <p className='text-xl border-2 border-yellow-400 border-b-4 border-white ml-8  mb-4 w-24 text-center text-white'>Notices</p>
+        <>
             <Swiper
-                effect={"coverflow"}
-                grabCursor={true}
-                centeredSlides={true}
-                slidesPerView={"auto"}
-                coverflowEffect={{
-                    rotate: 50,
-                    stretch: 0,
-                    depth: 100,
-                    modifier: 1,
-                    slideShadows: true,
+                pagination={{
+                    type: "progressbar",
                 }}
-                pagination={true}
-                modules={[EffectCoverflow, Pagination]}
+                navigation={true}
+                modules={[Pagination, Navigation]}
                 className="mySwiper"
             >
                 <SwiperSlide>
-                    <img src="https://swiperjs.com/demos/images/nature-1.jpg" alt="" />
+                    <img src="https://media.wired.com/photos/5cdef92d38916b321aa0c474/master/pass/Facebook-Robots-00.jpg" alt="" />
                 </SwiperSlide>
                 <SwiperSlide>
-                    <img src="https://swiperjs.com/demos/images/nature-2.jpg" alt="" />
+                    <img src="https://api.lorem.space/image" alt="" />
                 </SwiperSlide>
                 <SwiperSlide>
-                    <img src="https://swiperjs.com/demos/images/nature-3.jpg" alt="" />
+                    <img src="https://api.lorem.space/image" alt="" />
                 </SwiperSlide>
                 <SwiperSlide>
-                    <img src="https://swiperjs.com/demos/images/nature-4.jpg" alt="" />
+                    <img src="https://api.lorem.space/image" alt="" />
                 </SwiperSlide>
                 <SwiperSlide>
-                    <img src="https://swiperjs.com/demos/images/nature-5.jpg" alt="" />
+                    <img src="https://api.lorem.space/image?w=150&h=180" alt="" />
                 </SwiperSlide>
                 <SwiperSlide>
-                    <img src="https://swiperjs.com/demos/images/nature-6.jpg" alt="" />
+                    <img src="https://api.lorem.space/image?w=150&h=180" alt="" />
                 </SwiperSlide>
                 <SwiperSlide>
-                    <img src="https://swiperjs.com/demos/images/nature-7.jpg" alt="" />
+                    <img src="https://api.lorem.space/image?w=150&h=180" alt="" />
                 </SwiperSlide>
                 <SwiperSlide>
-                    <img src="https://swiperjs.com/demos/images/nature-8.jpg" alt="" />
+                    <img src="https://api.lorem.space/image?w=150&h=180" alt="" />
                 </SwiperSlide>
                 <SwiperSlide>
-                    <img src="https://swiperjs.com/demos/images/nature-9.jpg" alt="" />
+                    <img src="https://api.lorem.space/image?w=150&h=180" alt="" />
                 </SwiperSlide>
             </Swiper>
-                                </div>
+        </>
     );
-};
-
-export default Carousel;
+}
