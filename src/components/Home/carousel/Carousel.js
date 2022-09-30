@@ -14,9 +14,11 @@ import { EffectCoverflow, Pagination } from "swiper";
 
 const Carousel = () => {
     return (
-        <div className="dark:bg-gradient-to-r dark:from-blue-500 dark:to-black w-full">
+        // <div className="dark:bg-gradient-to-r dark:from-blue-500 dark:to-black w-full">
+            <div className="w-full">
+
             {/* <span className="text-yellow-400 text-xl border-b-4 border-b-white"></span> */}
-            <span className='text-yellow-400 text-xl hover:border-2 hover:border-yellow-400 border-b-4 border-indigo-500 ml-8'>Gallery</span>
+            <p className='text-xl border-2 border-yellow-400 border-b-4 border-white ml-8  mb-4 w-24 text-center text-white'>Notices</p>
             <Swiper
                 effect={"coverflow"}
                 grabCursor={true}

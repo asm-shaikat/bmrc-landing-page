@@ -25,30 +25,30 @@ const Navbar = () => {
                             </li>
                             <li className='dark:text-white'><Link>News</Link></li>
                             <li className='dark:text-white'><Link>Committee</Link></li>
-                            <li className='dark:text-white'><Link>Gallery</Link></li>
+                            <li className='dark:text-white'><Link to="/#gallery">Gallery</Link></li>
                             <li className='dark:text-white'><Link>About</Link></li>
 
                         </ul>
                     </div>
-                    <Link className="btn btn-ghost normal-case text-xl dark:text-white">BMRC</Link>
+                    <Link className="btn btn-ghost normal-case text-xl text-white dark:text-white">BMRC</Link>
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal p-0">
-                    <li className='dark:text-white'><Link to="/">Home</Link></li>
+                    <li className='text-white dark:text-white'><Link to="/">Home</Link></li>
                         <li tabIndex={0} className='dark:text-white'>
-                            <Link>
+                            <Link className='text-white'>
                                 Cources
                                 <svg className="fill-current" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z" /></svg>
                             </Link>
                             <ul className="p-2 bg-gradient-to-r from-violet-500 to-fuchsia-500">
-                                <li><Link>Submenu 1</Link></li>
-                                <li><Link>Submenu 2</Link></li>
+                                <li className='text-white'><Link>Submenu 1</Link></li>
+                                <li className='text-white'><Link>Submenu 2</Link></li>
                             </ul>
                         </li>
-                        <li className='dark:text-white'><Link>News</Link></li>
-                        <li className='dark:text-white'><Link>Committee</Link></li>
-                        <li className='dark:text-white'><Link>Gallery</Link></li>
-                        <li className='dark:text-white'><Link>About</Link></li>
+                        <li className='text-white dark:text-white'><Link>News</Link></li>
+                        <li className='text-white dark:text-white'><Link>Committee</Link></li>
+                        <li className='text-white dark:text-white'><Link>Gallery</Link></li>
+                        <li className='text-white dark:text-white'><Link>About</Link></li>
                     </ul>
                 </div>
                 
