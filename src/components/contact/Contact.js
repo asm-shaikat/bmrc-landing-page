@@ -1,5 +1,6 @@
 import React from 'react';
-
+import Icon from 'react-icons-kit';
+import {locationArrow} from 'react-icons-kit/fa/locationArrow'
 const Contact = () => {
     return (
         <>
@@ -35,7 +36,9 @@ const Contact = () => {
                         <textarea className="bg-white textarea textarea-bordered h-24" placeholder="Type here.."></textarea>
                     </label>
                 </div>
-                <button className="w-full btn btn-accent">Submit</button>
+                <div className='flex'>
+                <button className="w-full btn btn-accent"><Icon icon={locationArrow} size="30" className="text-text-white"></Icon></button>
+                </div>
 
             </div>
 

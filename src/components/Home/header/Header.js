@@ -1,5 +1,4 @@
 import React from 'react';
-import bot from '../../../images/bot.png';
 const Header = () => {
     return (
         // Option 1
@@ -29,7 +28,7 @@ const Header = () => {
         // </>
         // Option 3
         <>
-            <div className="hero min-h-screen" style={{ backgroundImage: `url("https://www.plm.automation.siemens.com/media/global/ko/Artificial-Intelligence-AI-Automotive-AT_tcm72-91268.jpg")` }}>
+            <div className="hero min-h-screen mb-5" style={{ backgroundImage: `url("https://www.plm.automation.siemens.com/media/global/ko/Artificial-Intelligence-AI-Automotive-AT_tcm72-91268.jpg")` }}>
                 <div className="hero-overlay bg-opacity-60"></div>
                 <div className="hero-content text-center text-neutral-content">
                     <div className="max-w-md">

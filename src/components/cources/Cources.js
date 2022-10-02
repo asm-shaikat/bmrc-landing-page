@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -13,7 +13,7 @@ import { Pagination } from "swiper";
 
 export default function App() {
     return (
-        <>
+        <div className="mb-4">
             <p className='text-xl border-2 border-yellow-400 border-b-4 border-white ml-8  mb-4 w-24 text-center text-white'>Cources</p>
             <div className="w-full pb-10">
                 <Swiper
@@ -44,7 +44,7 @@ export default function App() {
                     className="mySwiper"
                 >
                     <SwiperSlide>
-                        <div className="card card-side bg-purple-700 shadow-xl">
+                        <div className="card card-side bg-cyan-700 shadow-xl">
                             <figure><img className='w-full h-full' src="https://placeimg.com/200/280/arch" alt="Movie" /></figure>
                             <div className="card-body">
                                 <p className="card-title text-white">New movie is released!</p>
@@ -56,20 +56,7 @@ export default function App() {
                         </div>
                     </SwiperSlide>
                     <SwiperSlide>
-                        <div className="card card-side bg-purple-700 shadow-xl">
-                            <figure><img className='w-full h-full' src="https://placeimg.com/200/280/arch" alt="Movie" /></figure>
-                            <div className="card-body">
-                                <p className="card-title text-white">New movie is released!</p>
-                                <p className="text-2xs">Click the button to watch on Jetflix app.</p>
-                                <div className="card-actions justify-end">
-                                    <button className="btn btn-success normal-case text-white">Enroll</button>
-                                </div>
-                            </div>
-                        </div>
-                    </SwiperSlide>
-
-                    <SwiperSlide>
-                        <div className="card card-side bg-purple-700 shadow-xl">
+                        <div className="card card-side bg-cyan-700 shadow-xl">
                             <figure><img className='w-full h-full' src="https://placeimg.com/200/280/arch" alt="Movie" /></figure>
                             <div className="card-body">
                                 <p className="card-title text-white">New movie is released!</p>
@@ -82,7 +69,7 @@ export default function App() {
                     </SwiperSlide>
 
                     <SwiperSlide>
-                        <div className="card card-side bg-purple-700 shadow-xl">
+                        <div className="card card-side bg-cyan-700 shadow-xl">
                             <figure><img className='w-full h-full' src="https://placeimg.com/200/280/arch" alt="Movie" /></figure>
                             <div className="card-body">
                                 <p className="card-title text-white">New movie is released!</p>
@@ -95,7 +82,20 @@ export default function App() {
                     </SwiperSlide>
 
                     <SwiperSlide>
-                        <div className="card card-side bg-purple-700 shadow-xl">
+                        <div className="card card-side bg-cyan-700 shadow-xl">
+                            <figure><img className='w-full h-full' src="https://placeimg.com/200/280/arch" alt="Movie" /></figure>
+                            <div className="card-body">
+                                <p className="card-title text-white">New movie is released!</p>
+                                <p className="text-2xs">Click the button to watch on Jetflix app.</p>
+                                <div className="card-actions justify-end">
+                                    <button className="btn btn-success normal-case text-white">Enroll</button>
+                                </div>
+                            </div>
+                        </div>
+                    </SwiperSlide>
+
+                    <SwiperSlide>
+                        <div className="card card-side bg-cyan-700 shadow-xl">
                             <figure><img className='w-full h-full' src="https://placeimg.com/200/280/arch" alt="Movie" /></figure>
                             <div className="card-body">
                                 <p className="card-title text-white">New movie is released!</p>
@@ -107,7 +107,7 @@ export default function App() {
                         </div>
                     </SwiperSlide>
                     <SwiperSlide>
-                        <div className="card card-side bg-purple-700 shadow-xl">
+                        <div className="card card-side bg-cyan-700 shadow-xl">
                             <figure><img className='w-full h-full' src="https://placeimg.com/200/280/arch" alt="Movie" /></figure>
                             <div className="card-body">
                                 <p className="card-title text-white">New movie is released!</p>
@@ -120,6 +120,6 @@ export default function App() {
                     </SwiperSlide>
                 </Swiper>
             </div>
-        </>
+        </div>
     );
 }
