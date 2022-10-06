@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -15,7 +15,7 @@ import { Pagination, Navigation } from "swiper";
 export default function App() {
     return (
         <>
-            <div className="w-full">
+            <div className="w-full mb-10">
             <p className='text-xl border-2 border-yellow-400 border-b-4 border-white ml-8  mb-4 w-24 text-center text-white'>Gallery</p>
                 <Swiper
                     slidesPerView={1}
